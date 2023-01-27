@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(135, 135, 135);
+}
+
+header {
+    display: inline-flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* padding: 30px 10%; */
+    text-align: center;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #2bb376;
+}
+h1 {
+    text-align: center;
+}
+
+#container {
+/*     
+    grid-template-columns: auto auto auto auto; */
+    /* gap: 10px; */
+    /* background-color: #6a6b6b; */
+    padding: 5px;
+    border-radius: 10%;
+    text-align: center;
+    max-width: 30%;
+    margin-left: 350px;
+  }
+
+  #container > div {
+    background-color: rgba(237, 242, 88, 0.8);
+    text-align: center;
+    padding:5px;
+    font-size: 30px;
+    border-radius: 20px;
+    align-content: center;
+    /* max-width: 50%; */
+  }
+
+  #container > div button {
+    color: rgb(255, 255, 255);
+    background-color: blue;
+    font-size: larger;
+    border-radius: 20px;
+  }
+  #container > div img {
+    
+    border-radius: 20px;
+  }

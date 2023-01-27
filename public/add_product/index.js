@@ -17,6 +17,7 @@ submitButton.addEventListener('click', async () => {
     let inventoryNumber = +document.getElementById('inventory-input').value;
     // using ternary operator here - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
     let name = document.getElementById('name-input').value
+    let description = document.getElementById('description-input').value
     // packing all our data in an object
     // same as 
     // nameString: nameString
@@ -24,12 +25,13 @@ submitButton.addEventListener('click', async () => {
         image,
         priceNumber,
         inventoryNumber,
-        name
-        
+        name,
+        description,
+        inStock
     }
 
 
-    let response = await fetch('http://localhost:5000/create_items', {
+    let response = await fetch('http://localhost:5000/create_product', {
         method: "POST",
         headers: {
             'Content-Type': 'application/json',
