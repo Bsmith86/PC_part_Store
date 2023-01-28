@@ -11,10 +11,6 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
   
     data.json().then((parsedData) => {
       
-        // dynamically update page title
-        // let titleSpan = document.getElementById("product-name-title");
-        // titleSpan.textContent = `${object.name}`;
-      
         // prefill input fields with current product data
         let nameInput = document.getElementById("name-input");
         nameInput.value = `${parsedData.name}`;

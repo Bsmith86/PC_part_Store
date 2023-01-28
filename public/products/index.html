@@ -13,16 +13,26 @@
     <header>
         <nav class="navbar" id="navbar">
             <ul class="nav__links">
-                <li><a id='home'href="../index.html">Home</a></li>
-                <li><a id="add_product" href="../add_product/index.html">Add Product</a></li>
+                <li><a id='home'href="../index.html"><h1>Home</h1></a></li>
+                <li>
+                    <label for="vsearch"><h1>Product Search:</h1></label>
+                <input type="search" id="psearch" name="psearch">
+                <button id="search-btn">Search</button>
+                </li>
+                <li><a id="add_product" href="../add_product/index.html"><h1>Add Product</h1></a></li>
             </ul>
         </nav>
     </header>
     
     <div id="container">
-        
+       
     </div>
-    <button class="button" id="delete-btn">Delete</button>
+    <div id="container">
+        <button id="buy-btn">Buy Now</button>
+        <button id="delete-btn" title="this is permanent!">
+          <i class="fa-solid fa-trash"></i> DELETE
+        </button>
+      </div>
 
 
 </body>

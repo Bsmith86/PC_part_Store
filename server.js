@@ -107,6 +107,24 @@ app.delete("/delete_product/:productId", async (req, res) => {
     console.log("response from collection: ", response);
     res.json(response);
   });
+ 
+  // Buy function
+ app.put('/buy_product/:product_id', async (req, res) => {
+    let id = req.params.product_id;
+    console.log("Purchase ready");
+    console.log(req.body);
+    let response = await Items.findByIdAndUpdate(id,
+      {
+        inventory: req.body.newNumber,
+        inStock: req.body.inStock
+    },
+       {new: true} 
+    );
+    console.log("response from collection: ", response);
+    res.json(response);
+   
+  });
+
 app.listen(5000, () => {
     console.log(`Server is Listening on 5000`)
 })

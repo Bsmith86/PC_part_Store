@@ -1,17 +1,18 @@
 header {
-    display: inline-flex;
+    /* display:inline-flex; */
     /* justify-content: space-between; */
     /* align-items: center; */
-    padding: 30px 10%;
+    /* padding: 30px 10%; */
+    background-color: aqua;
     text-align: center;
 }
 
 .nav__links {
-    list-style: none;
+    list-style-type: style none;
 }
 
 .nav__links li {
-    display: inline-block;
+    display:inline-flex;
     padding: 0px 20px;
 }
 
@@ -20,7 +21,7 @@ header {
 }
 
 .nav__links li a:hover {
-    color: #2bb376;
+    color: #f9fc2d;
 }
 h1 {
     text-align: center;
@@ -30,13 +31,14 @@ h1 {
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 10px;
-    background-color: #6a6b6b;
-    padding: 10px;
+    background-color: #edfa00;
+    padding: 5px;
   }
 
   #container > div {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(9, 9, 191, 0.8);
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
+    color: #edfa00;
   }
