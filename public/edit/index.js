@@ -67,8 +67,9 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
         },
         body: JSON.stringify(updatedProduct),
       }
+      
     );
-  
+   
     let uploadStatusTag = document.getElementById("upload-status");
     if (response.status === 200) {
       console.log(`${response.status} - Great Success!`);
@@ -84,6 +85,7 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
   
     let finalData = await response.json();
     console.log(finalData);
+    window.location.href = `http://localhost:5000/products?idInQuery=${value}`;
   });
   
   

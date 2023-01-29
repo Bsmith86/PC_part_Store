@@ -9,8 +9,7 @@ submitButton.addEventListener('click', async () => {
     // get element
     // let nameElement = document.getElementById('name-input')
     // // get value of element
-    // let nameString = nameElement.value;
-
+   
     
     let image = document.getElementById('image-input').value;
     let priceNumber = document.getElementById('price-input').value;
@@ -18,6 +17,7 @@ submitButton.addEventListener('click', async () => {
     // using ternary operator here - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
     let name = document.getElementById('name-input').value
     let description = document.getElementById('description-input').value
+    let inStock = document.getElementById('inStockSelect').value
     // packing all our data in an object
     // same as 
     // nameString: nameString
@@ -55,7 +55,7 @@ submitButton.addEventListener('click', async () => {
         uploadStatusTag.style.color = "red";
 
     }
-
+    window.location.href = "../index.html"
 })
 
 

@@ -1,0 +1,101 @@
+body {
+    background-color: rgb(14, 8, 137);
+}
+h1 {
+    font-weight: 400;
+    color: #f9fc2d;
+}
+
+header {
+   background-image: url('https://images.pexels.com/photos/11708856/pexels-photo-11708856.jpeg?auto=compress&cs=tinysrgb&w=600');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 150px;
+   position: relative;
+   color: rgb(32, 30, 30);
+    /* background-color: aqua;
+    text-align: center; */
+}
+
+nav {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: rgba(10, 10, 10, 0.3);
+}
+/* nav li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+li a {
+    padding: 5px;
+    background-color: #fff;
+    text-decoration: none;
+}
+ */
+
+
+.nav__links {
+    list-style-type: style none;
+}
+
+.nav__links li {
+    display:inline-flex;
+    padding: 0px 20px;
+    
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+    border-radius: 10%;
+}
+
+.nav__links li a:hover {
+    color: #f9fc2d;
+}
+h1 {
+    text-align: center;
+}
+
+#container {
+    
+    /* grid-template-columns: auto auto auto auto; */
+    /* gap: 10px; */
+    /* background-color: #6a6b6b; */
+    padding: 5px;
+    border-radius: 10%;
+    text-align: center;
+    max-width: 30%;
+    margin-left: 350px;
+  }
+
+ #container > div {
+    background-color: rgb(245, 254, 4);
+    text-align: center;
+    padding: 2px;
+    font-size: 30px;
+    border-radius: 20px;
+    align-content: center;
+    /* max-width: 50%; */
+  }
+
+  /* #container > div button {
+    color: rgb(255, 255, 255);
+    background-color: blue;
+    font-size: larger;
+    border-radius: 20px;
+  } */
+  #container > div img {
+    
+    border-radius: 20px;
+  }

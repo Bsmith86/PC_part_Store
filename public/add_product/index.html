@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inventory</title>
+    <title>Add Products</title>
     <script defer src="./index.js"></script>
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
     <header>
-    <nav id="navbar">
+      <nav id="navbar">
+        <h1>Add Products</h1>
         <ul class="nav__links">
-            <li><a id="home" src="/index.html"><h1>Home</h1></a></li>
-            
+            <li><a id="home" src="/index.html"><h2>Home</h2></a></li>
+            <li><a id="cart" src="#"><h2>Cart</h2></a></li>
         </ul>
+      </nav>
     </header>        
-        </div>
-    </nav>
+       
     
     <div id="container">
         <p id="upload-status"></p> 
@@ -40,14 +41,14 @@
         </div>
         <div class="input-container">
             <label for="description-input">Description</label>
-            <input type="text" id="descrition-input"/>
+            <input type="text" id="description-input"/>
         </div>
         <!-- inStock -->
         <div class="input-container">
-            <p><label for="inStock-select">Product in stock? </label></p>
-            <select name="inStock-select" id="inStock-select">
-              <option value="true">true</option>
-              <option value="false">false</option>
+            <p><label for="in-stock-select">Product in stock? </label></p>
+            <select name="inStockSelect" id="inStockSelect">
+              <option value="true">Yes</option>
+              <option value="false">No</option>
             </select>
           </div>
     

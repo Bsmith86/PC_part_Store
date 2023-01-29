@@ -8,7 +8,8 @@ const itemsSchema = new mongoose.Schema({
     price: Number,
     inventory: Number,
     name: String,
-    inStock: Boolean
+    inStock: Boolean,
+    description: String
 })
 
 const Items = mongoose.model('Items', itemsSchema)
