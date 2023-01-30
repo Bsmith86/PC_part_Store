@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Audiowide;
+}
+
 header {
     /* display:inline-flex; */
     /* justify-content: space-between; */
@@ -5,6 +12,12 @@ header {
     /* padding: 30px 10%; */
     background-color: aqua;
     text-align: center;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .nav__links {
@@ -23,7 +36,7 @@ header {
 .nav__links li a:hover {
     color: #f9fc2d;
 }
-h1 {
+h2 {
     text-align: center;
 }
 

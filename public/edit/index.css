@@ -1,14 +1,21 @@
+* {
+    font-family: Audiowide;
+}
+
 body {
-    background-color: rgb(135, 135, 135);
+    background-color: rgba(9, 9, 191, 0.8);
 }
 
 header {
-    display: inline-flex;
+    /* display: inline-flex; */
     /* justify-content: space-between; */
     /* align-items: center; */
     /* padding: 30px 10%; */
     text-align: center;
+    background-color: aqua;
 }
+
+
 
 .nav__links {
     list-style: none;
@@ -31,8 +38,8 @@ h1 {
 }
 
 #container {
-/*     
-    grid-template-columns: auto auto auto auto; */
+    
+    /* grid-template-columns: auto auto auto auto; */
     /* gap: 10px; */
     /* background-color: #6a6b6b; */
     padding: 5px;
@@ -43,7 +50,7 @@ h1 {
   }
 
   #container > div {
-    background-color: rgba(237, 242, 88, 0.8);
+    background-color: rgb(245, 254, 4);
     text-align: center;
     padding:5px;
     font-size: 30px;
