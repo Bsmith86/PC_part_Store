@@ -115,6 +115,9 @@ deleteBtn.addEventListener("click", async () => {
    );
    let finalData = await response.json();
     console.log(finalData);
-    
-    // window.location.href = `http://localhost:5000/products?idInQuery=${productId}`;
+   
+    if(inStock == true){
+        window.location.href = `http://localhost:5000/products?idInQuery=${productId}`;
+    }
+     
   });
