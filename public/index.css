@@ -1,15 +1,36 @@
+.cart {
+  position: relative;
+  background-color: rgb(245, 245, 230);
+  color: #8abaea;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.cartAmount {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  font-size: 16px;
+  background-color: red;
+  color: rgb(255, 255, 255);
+  padding: 6px;
+  border-radius: 3px;
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Audiowide;
-}
+} 
 
 header {
     /* display:inline-flex; */
     /* justify-content: space-between; */
     /* align-items: center; */
-    /* padding: 30px 10%; */
+    padding: 10px 5%;
     background-color: aqua;
     text-align: center;
 }
