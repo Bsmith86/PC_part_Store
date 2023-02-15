@@ -31,7 +31,7 @@ submitButton.addEventListener('click', async () => {
     }
 
 
-    let response = await fetch('http://localhost:5000/create_product', {
+    let response = await fetch('../create_product', {
         method: "POST",
         headers: {
             'Content-Type': 'application/json',

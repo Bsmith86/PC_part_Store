@@ -7,7 +7,7 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
   let productContainer = document.getElementById("container");
   
   const fillCurrentProductData = async () => {
-    let data = await fetch(`http://localhost:5000/get_specific_product/${value}`);
+    let data = await fetch(`../get_specific_product/${value}`);
   
     data.json().then((parsedData) => {
       
@@ -59,7 +59,7 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
     
   
     let response = await fetch(
-      `http://localhost:5000/update_product/${value}`,
+      `../update_product/${value}`,
       {
         method: "PUT",
         headers: {
@@ -85,7 +85,7 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
   
     let finalData = await response.json();
     console.log(finalData);
-    window.location.href = `http://localhost:5000/products?idInQuery=${value}`;
+    window.location.href = `../products?idInQuery=${value}`;
   });
   
   

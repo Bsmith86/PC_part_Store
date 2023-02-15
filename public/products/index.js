@@ -33,7 +33,7 @@ const showProduct = async () => {
 }
 
 const searchedName = async () => {
-        let res = await fetch(`http://localhost:5000/product_by_name/${nameSearched}`);
+        let res = await fetch(`../product_by_name/${nameSearched}`);
     res.json().then((parsedData) => {
         console.log(parsedData.name); // array of objects
         // map through and put in HTML
@@ -46,7 +46,7 @@ const searchedName = async () => {
             <p class="product_price" >Price: $${parsedData.price}</p> 
             <p class="product_inventory" id="inventory" >${parsedData.inventory} Left</p>
             <p id="inStock">In Stock: ${parsedData.inStock}</p> 
-            <a href="http://localhost:5000/edit?idInQuery=${parsedData._id}">Update </a>
+            <a href="../edit?idInQuery=${parsedData._id}">Update </a>
              `
             containerElement.appendChild(pTag);
     })  
@@ -66,7 +66,7 @@ let deleteBtn = document.getElementById("delete-btn");
 
 deleteBtn.addEventListener("click", async () => {
   let response = await fetch(
-    `http://localhost:5000/delete_product/${productId}`,
+    `../delete_product/${productId}`,
     {
       method: "delete",
     }
@@ -104,7 +104,7 @@ deleteBtn.addEventListener("click", async () => {
 
  
    let response = await fetch(
-     `http://localhost:5000/buy_product/${productDataGlobal._id}`,
+     `../buy_product/${productDataGlobal._id}`,
      {
        method: "PUT",
        headers: {
@@ -117,7 +117,7 @@ deleteBtn.addEventListener("click", async () => {
     console.log(finalData);
    
     if(inStock == true){
-        window.location.href = `http://localhost:5000/products?idInQuery=${productId}`;
+        window.location.href = `../products?idInQuery=${productId}`;
     }
      
   });

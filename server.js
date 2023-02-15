@@ -5,7 +5,7 @@ const app = express()
 app.use(express.json());
 app.use(express.static('public'));
 app.use(express.urlencoded({extended:true}));
-const bodyParser = require('body-parser')
+// const bodyParser = require('body-parser')
 
 // import Items object from items.js
 const Items = require('./models/items')
