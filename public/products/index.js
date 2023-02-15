@@ -12,7 +12,7 @@ console.log(productId);
 console.log(nameSearched);
 let productDataGlobal;
 const showProduct = async () => {
-    let res = await fetch(`http://localhost:5000/get_specific_product/${productId}`);
+    let res = await fetch(`../get_specific_product/${productId}`);
     res.json().then((parsedData) => {
         console.log(parsedData); // array of objects
         productDataGlobal = parsedData
@@ -26,7 +26,7 @@ const showProduct = async () => {
             <p class="product_price" >Price: $${parsedData.price}</p> 
             <p class="product_inventory" id="inventory" >${parsedData.inventory} Left</p>
             <p id="inStock">In Stock: ${parsedData.inStock}</p>
-            <a href="http://localhost:5000/edit?idInQuery=${parsedData._id}">Update </a>
+            <a href="../edit?idInQuery=${parsedData._id}">Update </a>
              `
             containerElement.appendChild(pTag);
     })    
